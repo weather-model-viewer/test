@@ -272,5 +272,7 @@ void draw() {
     fill(0, 0, 0, 220);
     text(str(fixDec((latlongcorners[2]-latlongcorners[0])*(mouseX-boxCorners[0])/(boxCorners[2]-boxCorners[0])+latlongcorners[0]))+", "+str(fixDec((latlongcorners[3]-latlongcorners[1])*(mouseY-boxCorners[1])/(boxCorners[3]-boxCorners[1])+latlongcorners[1])), mouseX-textWidth(str(fixDec((latlongcorners[2]-latlongcorners[0])*(mouseX-boxCorners[0])/(boxCorners[2]-boxCorners[0])+latlongcorners[0]))+", "+str(fixDec((latlongcorners[3]-latlongcorners[1])*(mouseY-boxCorners[1])/(boxCorners[3]-boxCorners[1])+latlongcorners[1])))/2, mouseY-15);
   }
+  fill(100);
+  text(" "+str(img[0]), 0, 100);
 }
 

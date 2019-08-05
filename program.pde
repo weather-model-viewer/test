@@ -270,15 +270,15 @@ JSONObject aaa;
 void setup() {
   size(800, 800);
   frameRate(60);
-  backImg = loadImage("weather_images/aew_vort.700.hpa.2000.000000.png");
+  backImg = loadImage("aew_vort.700.hpa.2000.000000.png");
   for(int d = 0; d < numDirs; d++) {
     img = append(img, []);
     for(int i = 0; i < numFrames[dir]; i++) {
       if(i < 9) {
-        img[d] = append(img[d], loadImage("weather_images/dir"+str(d)+"/aew_vort.700.hpa.2000.00000"+str(i+1)+".png"));
+        img[d] = append(img[d], loadImage("dir"+str(d)+"/aew_vort.700.hpa.2000.00000"+str(i+1)+".png"));
       }
       else {
-        img[d] = append(img[d], loadImage("weather_images/dir"+str(d)+"/aew_vort.700.hpa.2000.0000"+str(i+1)+".png"));
+        img[d] = append(img[d], loadImage("dir"+str(d)+"/aew_vort.700.hpa.2000.0000"+str(i+1)+".png"));
       }
     }
   }

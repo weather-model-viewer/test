@@ -265,6 +265,7 @@ void keyPressed() {
 
 PImage[][] img = {};
 PImage backImg;
+JSONObject aaa;
 
 void setup() {
   size(800, 800);
@@ -281,6 +282,7 @@ void setup() {
       }
     }
   }
+  aaa = loadJSONObject("https://api.openweathermap.org/data/2.5/weather?q=London&APPID=001b0f58045147663b1ea518d34d88b4");
 }
 
 void draw() {
@@ -361,4 +363,6 @@ void draw() {
     }
     //directoryScroll();
   }
+  fill(0);
+  text(aaa, 100, 100);
 }
